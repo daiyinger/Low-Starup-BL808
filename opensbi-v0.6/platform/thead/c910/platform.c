@@ -342,7 +342,7 @@ static int c910_pmp_region_info(u32 hartid, u32 index, ulong *prot,
 	case 4:
 		*prot	  = PMP_A | PMP_R | PMP_W;
 		*addr	  = 0xe0000000;
-		*log2size = log2roundup(0x8000000);
+		*log2size = log2roundup(0x20000000);
 		break;
 	default:
 		ret = -1;
